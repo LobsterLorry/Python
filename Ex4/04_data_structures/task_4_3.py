@@ -10,3 +10,9 @@
 '''
 
 CONFIG = 'switchport trunk allowed vlan 1,3,10,20,30,100'
+#NIL = CONFIG.find('1')
+#VLANS = CONFIG[NIL::] 
+VLANS = CONFIG[CONFIG.find('1')::]
+VLANS = VLANS.split(',')
+print(VLANS)
+#print(type(VLANS))
