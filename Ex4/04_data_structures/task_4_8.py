@@ -19,3 +19,14 @@
 '''
 
 IP = '192.168.3.1'
+IP = IP.split('.')
+A = int(IP[0])
+B = int(IP[1])
+C = int(IP[2])
+D = int(IP[3])
+#print(type(A))
+OUPUT = '''
+{0:<10} {1:<10} {2:<10} {3:<10}
+{0:<10b} {1:<10b} {2:<10b} {3:<10b}
+'''
+print(OUPUT.format(A,B,C,D))
