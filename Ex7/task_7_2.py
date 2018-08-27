@@ -12,3 +12,23 @@
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+
+
+from sys import argv
+config = argv[1]
+FILE = open(config)
+FILE = FILE.read().split('\n')
+
+
+for elem in FILE:
+	if elem.startswith('!  '):	
+		#FILE.remove(elem)
+		pass
+	elif elem.startswith(' '):
+		print(elem[1::])
+	elif elem.startswith('! '):
+		#FILE.remove(elem)
+		pass
+	elif len(elem) > 2:
+		print(elem) 
+	
