@@ -17,3 +17,17 @@ num_list = [10, 2, 30, 100, 10, 50, 11, 30, 15, 7]
 word_list = [
     'python', 'ruby', 'perl', 'ruby', 'perl', 'python', 'ruby', 'perl'
 ]
+
+NUMBERS = int(input('Enter number from list:'))
+WORDS = input('Enter word from list:')
+
+REVERSE1 = {0:9, 1:8, 2:7, 3:6, 4:5, 5:4, 6:3, 7:2, 8:1, 9:0}
+REVERSE2 = {0:7, 1:6, 2:5, 3:4, 4:3, 5:2, 6:1, 7:0}
+
+reverse_num = (num_list[::-1].index(NUMBERS))
+reserse_word= word_list[::-1].index(WORDS)
+
+Position1 = REVERSE1[reverse_num]
+Position2 = REVERSE2[reserse_word]
+#Index_numb = num_list(reverse_num)
+print(Position1, Position2)
