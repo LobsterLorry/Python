@@ -18,3 +18,20 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 '''
+
+FILE = open('CAM_table.txt')
+FILE = FILE.readlines()
+
+#print(FILE)
+
+i=5
+while i >=0: 
+	FILE.pop(0)
+	i=i-1
+
+for elem in FILE:
+	elem = elem[:-1]
+	elem = elem.split('    ')
+	elem.pop(2)
+	print('    '.join(elem))
+#print(FILE)
