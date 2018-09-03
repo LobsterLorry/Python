@@ -43,3 +43,8 @@ london_co = {
         'routing': True
     }
 }
+Device = input('Enter device name:')
+Variants = str(london_co[Device].keys())[11:-2]
+print('Enter parameter'+' '+'('+Variants+')'+':')
+Param = input().lower()
+print(london_co[Device].get(Param,'Oooops, no parameter'))
