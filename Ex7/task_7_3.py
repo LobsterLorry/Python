@@ -35,3 +35,4 @@ for elem in FILE:
 	elem.pop(2)
 	print('    '.join(elem))
 #print(FILE)
+	

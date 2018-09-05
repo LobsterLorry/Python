@@ -13,7 +13,7 @@ hostname sw1
 !
 !
 !
-! 
+!	 
 !
 !
 !
@@ -70,7 +70,7 @@ alias exec xc sh xconnect all
 alias exec vc sh mpls l2tr vc
 !
 line con 0
- exec-timeout 0 0
+ 		exec-timeout 0 0
  privilege level 15
  logging synchronous
 line aux 0

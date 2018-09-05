@@ -76,5 +76,5 @@ access_template = [
     ]
 
 
-generate_access_config(access_dict, access_template)
+generate_access_config(access_dict, access_template)  
 
