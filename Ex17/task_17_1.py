@@ -60,8 +60,21 @@ def parse_sh_version(output):
 			#print(tupl.groups())
 #FILE0 = open(sh_version_files[2])
 #FILE0=FILE0.read()
+def write_to_csv(filename,LIST):
+	with open(filename, 'w') as CSVFILE:
+		writer = csv.writer(CSVFILE)
+		for lists in LIST:
+			writer.writerow(lists)
+
+
+
+LIST = []
+LIST.append(headers)
 for i in range(0,3):
 	FILE = open(sh_version_files[i])
 	FILE=FILE.read()
-	parse_sh_version(FILE)
+	matches = list(parse_sh_version(FILE))
+	LIST.append(matches)
+#print(LIST)
+write_to_csv('routers_inventory.csv',LIST)
 	
